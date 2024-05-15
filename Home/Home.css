@@ -1,0 +1,585 @@
+/* Created by maleesha shavindi*/
+body {
+  background-color: #c2c2c2;
+}
+
+/* Default styles */
+/* Style for navigation bar */
+nav {
+  background-color: #33383b;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 50px;
+  
+}
+/* Styles the logo container */
+.logo {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 0 50px;
+  text-decoration: none;
+}
+/* Styles the first part of the logo */
+.Logo1 {
+  display: inline-block;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4CAF50;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+/* Styles the second part of the logo */
+.Logo2 {
+  display: inline-block;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+/* Styles the logo image */
+nav .logo img {
+  height: 100%;
+}
+/* Styles the unordered list inside the navigation */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+/* Styles the links inside the list items */
+nav li a {
+  display: block;
+  color: #fdfdfd;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* Styles the links when hovered over */
+nav li a:hover {
+  background-color: #13d94e;
+}
+/* Styles the active link */
+.active {
+  background-color: #4CAF50;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .logo {
+    margin-bottom: 15px;
+  }
+
+  .Logo1 {
+    font-size: 1.5rem;
+  }
+
+  .Logo2 {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+}
+/* Styles the caption */
+.caption {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+}
+/*--------------------------------*/
+/* Sets up the slideshow container */
+.slideshow {
+  width: 100%;
+  height: 670px;
+  position: relative;
+  overflow: hidden;
+}
+/* Makes the slide images cover the entire slide element */
+.slide img {
+  object-fit: cover;
+  width: 100%;
+  
+}
+/* Sets up each slide element */
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+/* Styles the active slide */
+.slide.active {
+  opacity: 1;
+}
+/* Styles the first slide */
+.slide:first-child {
+  opacity: 1;
+}
+/* Styles the slides when the slideshow is hovered */
+.slideshow:hover .slide {
+  opacity: 1;
+}
+/* Styles the caption */
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+/* Define the key frames for the animations */
+@keyframes image-slideshow {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  53% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* Styles the first slide with a 15s infinite animation */
+.slide:nth-child(1) {
+  animation: image-slideshow 15s infinite;
+}
+
+/* Styles the second slide with a 15s infinite animation that starts 5s after the first slide */
+.slide:nth-child(2) {
+  animation: image-slideshow 15s infinite 5s;
+}
+
+/* Styles the third slide with a 15s infinite animation that starts 10s after the first slide */
+.slide:nth-child(3) {
+  animation: image-slideshow 15s infinite 10s;
+}
+
+
+/* Style for the card list */
+.visit-heading {
+  margin-bottom: 75px ;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* Style for each card */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  width: 300px;
+}
+
+/* Style for the image in the card */
+.card img {
+  border-radius: 8px 8px 0 0;
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+  
+}
+
+/* Style for the content in the card */
+.card .content {
+  padding: 20px;
+}
+
+/* Style for the title in the card */
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Style for the description in the card */
+.card p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Style for the link button in the card */
+.card a {
+  background-color: #4CAF50;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+/*Changes background color of links inside elements with class "card" on hover */
+.card a:hover {
+  background-color: #ff8c00;
+}
+/* Centers and makes block-level elements of class "btn" */
+.card .btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+/* Centers block-level elements of class "content" and sets margin-top */
+.content{
+  margin-top: 60px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+/* Styles for the entire shop section */
+.shop {
+  background-color: lightgray;
+  padding: 80px 0;
+  text-align: center;
+  width: 100%;
+  margin: 50px;
+}
+/* Styles for the container inside the shop section */
+ .container {
+  width: 100%;
+} 
+
+/* Styles for the heading of the shop section */
+.shop h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Styles for the paragraph of the shop section */
+.shop p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+/* Styles for the button inside the shop section */
+.shop .btn {
+  font-size: 20px;
+  padding: 15px 40px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+/* Styles for the button when it's hovered over */
+.shop .btn:hover {
+  background-color: #ff8c00;
+}
+
+/* Styles for the images inside the shop section */
+.shop .images {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Styles for the individual images inside the shop section */
+.shop .images img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+/* Styles for the last image in the row, so it doesn't have a margin-right */
+.shop .images img:last-child {
+  margin-right: 0;
+}
+
+/* Styles for heading 1 */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styles for heading 2 */
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Styles for paragraphs */
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+/* Styles for unordered lists */
+ul {
+  list-style: disc;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+/* Styles for list items */
+li {
+  font-size: 18px;
+  line-height: 1.5;
+}
+/* Styles for footer section */
+.footer-distributed {
+  background-color: #2d2a30;
+  color: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+} 
+
+/* Footer left */
+
+ .footer-distributed .footer-left {
+  width: 30%;
+}
+/* Styles for header of footer section */
+.footer-distributed h3 {
+  color: #29c63b;
+  font: normal 36px 'Cookie', cursive;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Styles for span inside header of footer section */
+.footer-distributed h3 span {
+  color: #f6f6f6;
+} 
+
+/* Footer links */
+
+ .footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+}
+
+/* Styles for links inside footer section */
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Styles for footer company name */
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+} 
+
+/* Styles for Footer Center */
+
+ .footer-distributed .footer-center {
+  width: 35%;
+}
+
+/* Styles for icons in center section of footer */
+.footer-distributed .footer-center i {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+} 
+/* Styles for envelope icon in center section of footer */
+ .footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+/* Styles for text inside center section of footer */
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+/* Styles for span inside text in center section of footer */
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+/* Styles for links inside text in center section of footer */
+.footer-distributed .footer-center p a {
+  color: #29c63b;
+  text-decoration: none;
+  ;
+} 
+
+.footer-right{
+  padding-left: 10px;
+} 
+
+.footer-distributed .footer-right {
+  width: 30%;
+}
+/* Styles for footer company about section */
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+/* Styles for span inside footer company about section */
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/* Changes link color on hover */
+.footer-links a:hover {
+  color: #29c63b;
+} 
+/* Applies CSS rules for screens with a maximum width of 880px */
+ @media (max-width: 880px) {
+  /* Changes display to block and sets width to 100% for footer left, center, and right sections */
+  .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+  }
+  /* Sets left margin to 0 for envelope icon in footer center section */
+  .footer-distributed .footer-center i {
+      margin-left: 0;
+  }
+} 
+/* Applies styles to the footer section */
+.footer {
+  background-color:#2d2a30;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+/* Applies styles to paragraphs within the footer */
+.footer p {
+  margin: 0;
+}
+/* Applies styles to links within the footer */
+.footer a {
+  color: green;
+  text-decoration: none;
+}
+/* create a feedback bar linked */
+.feedback-bar {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  background-color: lightgray;
+  border: 2px solid #28a946;
+  border-radius: 8px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../images/r.png);
+  margin-bottom: 150px;
+  transition: border 0.3s ease;
+}
+/*adding box to feedback bar and text alining */
+.feedback-bar p {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  border: 2px solid #28a946;
+  padding: 5px;
+  border-radius: 10px;
+  background-color:#28a946;
+  transition: all 0.3s ease;
+}
+/*hover feedback bar link*/
+.feedback-bar p :hover{
+  background-color: #d7550f;
+}
+/*feedback bar text alining*/
+.feedback-bar a {
+  text-align: center;
+  background-color: #29c63b;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration:dotted;
+  font-size: 16px;
+  transition: all 0.3s ease;
+ 
+}
+/*adding colour to feedback hover bar*/
+.feedback-bar a:hover {
+  background-color: #d7550f;
+}
+@media (max-height:800px) {
+  footer {
+      position: relative;
+  }
+  header {
+      padding-top: 40px;
+  }
+}
