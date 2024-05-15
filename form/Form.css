@@ -1,0 +1,425 @@
+/* Created by Maleesha shavindi */
+/* Styling for the navigation bar */
+nav {
+  background-color: #33383b;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 50px;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+}
+/* Styling for the logo */
+.logo {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 0 50px;
+  text-decoration: none;
+}
+/* Styling for the first part of the logo */
+.Logo1 {
+  display: inline-block;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color:#4CAF50;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+/* Styling for the second part of the logo */
+.Logo2 {
+  display: inline-block;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+/* Styling for the logo image */
+nav .logo img {
+  height: 100%;
+}
+
+/* Styling for the unordered list */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+/* Styling for the navigation links */
+nav li a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* Styling for the hover state of navigation links */
+nav li a:hover {
+  background-color: #13d94e;
+}
+/* Styling for the active navigation link */
+.active {
+  background-color: #4CAF50;
+}
+
+/* Removing underline from all anchor tags */
+a{
+  text-decoration: none;
+}
+
+/* Removing bullets from all lists */
+li{
+  list-style-type: none;
+}
+/* Set background image and font family */
+body{
+
+background: url("../images/jungle.2.jpg");
+background-size: 75%;
+background-position: center;
+  font-family: 'Lato', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Style for form container */
+.formbody {
+margin-top: 5%;
+}
+
+/* Style for question heading */
+.question-box h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+/* Style for question label */
+.question-boxlabel {
+  display: block;
+  font-family: avenir;
+  margin-top: 50px;
+  margin-bottom: 10px;
+ 
+
+}
+/* Style for radio buttons */
+.question-box input[type="radio"] {
+  display: none;
+}
+
+.question-box .radio-label {
+  display: inline-block;
+margin-left: 20px;
+ padding: 10px 20px;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  height: 20px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s;
+}
+.question-box .radio-label:hover {
+  transition: 0.5s;
+  background-size: 200% auto;
+  border: #75975e 1px;
+  border-color: #75975e;
+
+}
+
+.question-box input[type="radio"]:checked + .radio-label {
+ background-color: #75975e;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  color: #fff;
+}
+/* Style for select dropdown */
+.question-box select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-family: avenir ;
+  border-radius: 5px;
+  height: 40px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s;
+  border-color: #75975e 1px;
+}
+
+.question-boxselect:hover {
+  transition: 0.5s;
+  background-size: 200% auto;
+  border: 1px solid transparent;
+}
+
+.question-box select:focus {
+  outline: none;
+ 
+  transition: 0.5s;
+  background-size: 200% auto;
+  border: 1px solid transparent;
+}
+/* Style for text area */
+.question-box textarea {
+  display: block;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: avenir ;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s;
+}
+/* Hover effect for textarea */
+.question-boxtextarea:hover {
+  
+  transition: 0.5s;
+  background-size: 200% auto;
+  border-color: #75975e;
+  border: 1px solid transparent
+  
+}
+/* Focus effect for textarea */
+.question-box textarea:focus {
+
+  transition: 0.5s;;
+  background-size: 200% auto;
+  border-color: #75975e;
+  border: 1px solid transparent;
+
+}
+/* Submit button styles */
+.submitbtn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+width: 80%;
+  height: 50px;
+  margin: 0 auto;
+color: #fff;
+font-size: 15px;
+  background-color: #75975e;
+  border-radius: 10px;
+  
+}
+
+/* Hover effect for submit button */
+.question-boxinput[type="submit"]:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Styles for the question box container */
+.question-box {
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+} 
+/* Styles for the footer */
+footer {
+  position: relative;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-height:800px) {
+  footer {
+      position: relative;
+  }
+  header {
+      padding-top: 40px;
+  }
+}
+/* Styles for the distributed footer section */
+.footer-distributed {
+  background-color: #2d2a30;
+  color: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
+}
+/* Set display and vertical alignment for footer sections */
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+} 
+
+/* Set width for footer left section */
+
+ .footer-distributed .footer-left {
+  width: 30%;
+}
+/* Style for h3 element in footer section */
+.footer-distributed h3 {
+  color: #29c63b;
+  font: normal 36px 'Cookie', cursive;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style for span element inside h3 in footer section */
+.footer-distributed h3 span {
+  color: #f6f6f6;
+} 
+
+/* Style for footer links */
+
+ .footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+}
+/* Style for individual footer link */
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+/* Style for footer company name */
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+} 
+
+/* Set width for footer center section */
+
+ .footer-distributed .footer-center {
+  width: 35%;
+}
+/* Style for icon in footer center section */
+.footer-distributed .footer-center i {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+} 
+/* Style for envelope icon in footer center section */
+ .footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+/* Style for text in footer center section */
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+/* Style for span element inside p element in footer center section */
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+/* Style for link in footer center section */
+.footer-distributed .footer-center p a {
+  color: #29c63b;
+  text-decoration: none;
+  ;
+} 
+/* Style for right section of footer */
+.footer-right{
+  padding-left: 10px;
+} 
+/* Set width for right section of footer */
+.footer-distributed .footer-right {
+  width: 30%;
+}
+/* Style for footer company about text */
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+/* Style for span element inside footer company about text */
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/* Style for hovered footer link */
+.footer-links a:hover {
+  color: #29c63b;
+} 
+
+/* Media query for smaller screens */
+ @media (max-width: 880px) {
+  /* Style for span element inside footer company about text */
+  .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+  }
+  /* Adjust margin for envelope icon in footer center section */
+  .footer-distributed .footer-center i {
+      margin-left: 0;
+  }
+}
+ /* Style for footer */
+.footer {
+  background-color:#2d2a30;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Style for text inside footer */
+.footer p {
+  margin: 0;
+}
+/* Style for link inside footer */
+.footer a {
+  color: green;
+  text-decoration: none;
+}
