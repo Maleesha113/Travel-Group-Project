@@ -1,0 +1,60 @@
+/* This page created by me - 20220977-Maleesha shavidi*/
+/* Set the maximum width of the page and center it */
+body {
+	max-width: 600px;
+	margin: 0 auto;
+	background-color:#EEEEEE;
+}
+/* Set the maximum width of the container and center it */
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+/* Style the profile picture with a circular shape, box shadow, and transition effect on hover */
+.profile-pic {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	margin: 30px;
+	object-fit: cover;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	transition: all 0.2s ease-in-out; /* add a smooth transition effect */
+}
+/* Add a scaling and brightness effect to the profile picture on hover */
+.profile-pic:hover {
+	transform: scale(1.1);
+	filter: brightness(110%);
+}
+/* Set the font family, size, and margin for the name */
+.name {
+    font-family: Arial, sans-serif;
+	font-size: 36px;
+	margin: 0;
+}
+/* Set the font size and margin for the description */
+.description {
+	font-size: 24px;
+	margin-top: 20px;
+}
+/* Set the font size and margin for the contact information */
+.contact {
+	font-size: 20px;
+	margin-top: 20px;
+}
+/* Style the green button with padding, background color, font color, border, border radius, and transition effect */
+.green-button {
+	font-size: 20px;
+	padding: 15px 40px;
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 30px;
+	transition: background-color 0.3s ease;
+  }
+  /* Add a background color change effect to the green button on hover */
+.green-button:hover {
+background-color: #ff8c00;
+}
+
+  
